@@ -61,4 +61,4 @@ type_ingredients <- type_array(items = type_object(
 chat <- chat_anthropic("
   The user input contains a recipe. Extract a list of ingredients
 ")
-chat$extract_data(recipe, type = type_ingredients)
+chat$chat_structured(recipe, type = type_ingredients)
